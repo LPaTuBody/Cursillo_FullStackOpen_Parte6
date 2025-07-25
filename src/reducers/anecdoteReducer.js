@@ -16,7 +16,7 @@ const initialState = anecdotesAtStart.map(asObject)
 
 
 // reducer
-const reducer = (state = initialState, action) => {
+const anecdoteReducer = (state = initialState, action) => {
   console.log('action', action)
 
   switch (action.type) {
@@ -39,4 +39,4 @@ export const vote = (payload) => ({ type: 'VOTE', payload })
 
 export const createAnecdote = (payload) => ({ type: 'NEW_ANECDOTE', payload })
 
-export default reducer
+export default anecdoteReducer
