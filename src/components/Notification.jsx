@@ -1,8 +1,6 @@
-import { useSelector, useDispatch } from 'react-redux'
-import { rmNotification } from '../reducers/notificationReducer'
+import { useSelector } from 'react-redux'
 
 const Notification = () => {
-  const dispatch = useDispatch()
   const notification = useSelector(state => state.notification)
 
   const style = {
@@ -15,10 +13,7 @@ const Notification = () => {
     width: '90%',
   }
 
-  if (notification) setTimeout(() => {
-    dispatch(rmNotification())
-  }, 5000)
-  else return null
+  if (!notification) return null
   
   return (
     <div style={style}>

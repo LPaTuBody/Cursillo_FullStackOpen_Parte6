@@ -16,7 +16,6 @@ export default defineConfig([{
         globals: {
             ...globals.browser,
         },
-
         ecmaVersion: "latest",
         sourceType: "module",
         parserOptions: {},
@@ -30,7 +29,7 @@ export default defineConfig([{
     )),
 
     settings: {
-        react: { version: "18.2" },
+        react: { version: "19.1" },
     },
 
     plugins: {
