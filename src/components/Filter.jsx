@@ -4,8 +4,7 @@ import { filterChange } from "../reducers/filterReducer"
 const Filter = () => {
   const dispatch = useDispatch()
   const style = {
-    marginBottom: '20px',
-    
+    margin: '20px 0',
   }
 
   return (
